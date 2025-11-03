@@ -1,49 +1,54 @@
-# <img src="app_icon.ico" alt="App Icon" width="64" height="64"> Python Toolz
+# PNG zu ICO Converter
 
-Eine Sammlung von nützlichen Python-Tools und -Anwendungen.
+Ein einfaches GUI-Tool zum Konvertieren von PNG-Bildern in ICO-Format für Windows-Icons.
 
-## Übersicht
+## Features
 
-Dieses Repository enthält verschiedene Python-basierte Tools und Anwendungen, die für unterschiedliche Zwecke entwickelt wurden. Von Datenanalyse über Multimedia-Konvertierung bis hin zu Spielen – hier findest du eine Vielzahl von praktischen Skripten und GUI-Anwendungen.
+- Benutzerfreundliche grafische Oberfläche
+- Auswahl mehrerer Icon-Größen (16x16, 32x32, 48x48, 64x64, 128x128, 256x256)
+- Batch-Konvertierung mehrerer PNG-Dateien
+- Fortschrittsanzeige
+- Automatische Erstellung von Multi-Size ICO-Dateien
 
-## Enthaltene Tools
+## Voraussetzungen
 
-### Hauptanwendungen
-- **Disk Analyzer**: Analysiert Festplattenbelegung
-- **Camera App**: Kamera-Anwendung mit verschiedenen Modi
-- **Video Converter**: Konvertiert Videodateien
-- **Icon Converter**: Konvertiert PNG-Bilder zu ICO-Format
-- **Shazam-ähnliche App**: Musik-Erkennung (fLaushazam_py)
-
-### Spiele
-- **Snake Game**: Klassisches Snake-Spiel in verschiedenen Varianten
-- **AI Snake Battle**: KI-gestützte Snake-Battles
-
-### Weitere Tools
-- **Key Mouse Recorder**: Aufzeichnung von Tastatur- und Maus-Eingaben
-- **Tidal Downloader**: Download-Tool für Tidal-Musik
-- **Voice Bot**: Sprachbasierte Anwendungen
+- Python 3.x
+- PIL (Pillow)
+- ttkbootstrap
 
 ## Installation
 
 1. Klone das Repository:
    ```bash
    git clone <repository-url>
-   cd python.toolz
+   cd png-to-ico-converter
    ```
 
-2. Installiere die erforderlichen Abhängigkeiten (für spezifische Tools):
+2. Installiere die erforderlichen Pakete:
    ```bash
-   pip install -r requirements.txt
+   pip install pillow ttkbootstrap
    ```
 
 ## Verwendung
 
-Jedes Tool hat sein eigenes Verzeichnis mit einer README-Datei oder Anweisungen. Schaue in die entsprechenden Unterordner für detaillierte Informationen.
+1. Starte die Anwendung:
+   ```bash
+   python icon.py
+   ```
 
-## Beiträge
+2. Wähle den Eingabeordner mit PNG-Dateien aus
+3. Wähle den Ausgabeordner für die ICO-Dateien
+4. Wähle die gewünschten Icon-Größen aus
+5. Klicke auf "Konvertieren"
 
-Beiträge sind willkommen! Erstelle einen Issue oder Pull Request für Verbesserungen oder neue Tools.
+## Kompilierung zu EXE
+
+Die Anwendung kann mit PyInstaller zu einer ausführbaren EXE-Datei kompiliert werden:
+
+```bash
+pip install pyinstaller
+pyinstaller --onefile --windowed icon.py
+```
 
 ## Lizenz
 
